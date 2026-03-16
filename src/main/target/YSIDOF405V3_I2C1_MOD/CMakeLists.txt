@@ -1,0 +1,1 @@
+target_stm32f405xg(YSIDOF405V3_UART4_MOD)
