@@ -18,16 +18,8 @@ timerHardware_t timerHardware[] = {
     DEF_TIM(TIM2,  CH3, PA2,  TIM_USE_OUTPUT_AUTO,               0, 0), // S4_OUT D1_ST1
 
     // Motors 5-6
-    // -- DISABLED --
-    //DEF_TIM(TIM5,  CH2, PA1,  TIM_USE_OUTPUT_AUTO,               0, 0), // S5_OUT
-    //DEF_TIM(TIM1,  CH1, PA8,  TIM_USE_OUTPUT_AUTO,               0, 0), // S6_OUT
-
-    // LED strip
-    DEF_TIM(TIM4,  CH1, PB6,  TIM_USE_LED,                       0, 0),
-
-    // Inputs / PPM pads
-    // PPM not used on this variant; S2_IN provided
-    DEF_TIM(TIM4,  CH4, PB9,  TIM_USE_ANY,                       0, 0), // S2_IN
+    DEF_TIM(TIM5,  CH2, PA1,  TIM_USE_OUTPUT_AUTO,               0, 0), // S5_OUT
+    DEF_TIM(TIM1,  CH1, PA8,  TIM_USE_OUTPUT_AUTO,               0, 0), // S6_OUT
 
     // UART6 shared pads and additional inputs
     DEF_TIM(TIM8,  CH1, PC6,  TIM_USE_ANY,                       0, 0), // S3_IN, UART6_TX

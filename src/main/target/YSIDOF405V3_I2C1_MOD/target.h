@@ -9,7 +9,7 @@
 
 // Board identity
 #define TARGET_BOARD_IDENTIFIER "OB43"
-#define USBD_PRODUCT_STRING "Omnibus F4"
+#define USBD_PRODUCT_STRING "YSIDO F405V3 I2C1 MOD"
 
 // Indicators
 #define LED0                    PB5
@@ -18,10 +18,15 @@
 
 // I2C
 #define USE_I2C
-#define USE_I2C_DEVICE_2
-#define I2C_DEVICE_2_SHARES_UART3
-#define I2C_EXT_BUS BUS_I2C2
+//DIsable i2c2
+#undef USE_I2C_DEVICE_2
+#undef I2C_DEVICE_2_SHARES_UART3
+
+#define USE_I2C_DEVICE_1
+#define I2C_EXT_BUS BUS_I2C1
 #define UG2864_I2C_BUS I2C_EXT_BUS
+#define I2C1_SCL                        PB6
+#define I2C1_SDA                        PB9
 
 // IMU / Gyro
 #define MPU6000_CS_PIN          PA4
@@ -126,19 +131,13 @@
 #define USE_ADC
 #define ADC_CHANNEL_1_PIN               PC1
 #define ADC_CHANNEL_2_PIN               PC2
-//Disable channel 3
-#define ADC_CHANNEL_3_PIN               NONE
+#define ADC_CHANNEL_3_PIN               PA0
 #define CURRENT_METER_ADC_CHANNEL       ADC_CHN_1
 #define VBAT_ADC_CHANNEL                ADC_CHN_2
-//Disable RSSI
-#define RSSI_ADC_CHANNEL                NONE
+#define RSSI_ADC_CHANNEL                ADC_CHN_3
 
 // Sensors set
 #define SENSORS_SET (SENSOR_ACC|SENSOR_MAG|SENSOR_BARO)
-
-// LED strip
-#define USE_LED_STRIP
-#define WS2811_PIN                   PB6
 
 // Features
 #define DISABLE_RX_PWM_FEATURE
