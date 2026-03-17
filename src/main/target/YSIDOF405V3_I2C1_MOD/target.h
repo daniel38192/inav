@@ -26,7 +26,7 @@
 #define I2C_EXT_BUS BUS_I2C1
 #define UG2864_I2C_BUS I2C_EXT_BUS
 #define I2C1_SCL                        PB6
-#define I2C1_SDA                        PB9
+#define I2C1_SDA                        PB7
 
 // IMU / Gyro
 #define MPU6000_CS_PIN          PA4
@@ -124,7 +124,8 @@
 #define USE_SDCARD_SPI
 #define SDCARD_SPI_BUS          BUS_SPI2
 #define SDCARD_CS_PIN           SPI2_NSS_PIN
-#define SDCARD_DETECT_PIN       PB7
+// Disable sdcard detect pin
+#define SDCARD_DETECT_PIN       NONE
 #define SDCARD_DETECT_INVERTED
 
 // ADCs
