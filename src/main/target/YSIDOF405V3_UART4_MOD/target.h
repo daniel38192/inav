@@ -76,6 +76,13 @@
 #define UART3_RX_PIN            PB11
 #define UART3_TX_PIN            PB10
 
+//Enables Uart4
+//PA1 UART4_RX
+//PA0 UART4_TX
+#define USE_UART4
+#define UART4_RX_PIN PA1
+#define UART4_TX_PIN PA0
+
 #define USE_UART6
 #define UART6_RX_PIN            PC7
 #define UART6_TX_PIN            PC6
@@ -86,7 +93,7 @@
 #define USE_SOFTSERIAL1
 #define SOFTSERIAL_1_RX_PIN     PC6     // shared with UART6 TX
 #define SOFTSERIAL_1_TX_PIN     PC6     // shared with UART6 TX
-#define SERIAL_PORT_COUNT       5       // VCP, USART1, USART3, USART6, SOFTSERIAL1
+#define SERIAL_PORT_COUNT       6       // VCP, USART1, USART3, UART4, USART6, SOFTSERIAL1
 
 // Default RX setup
 #define DEFAULT_RX_TYPE         RX_TYPE_SERIAL
