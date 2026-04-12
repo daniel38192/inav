@@ -134,11 +134,9 @@
 #define ADC_CHANNEL_1_PIN               PC1
 #define ADC_CHANNEL_2_PIN               PC2
 //Disable channel 3
-#define ADC_CHANNEL_3_PIN               NONE
 #define CURRENT_METER_ADC_CHANNEL       ADC_CHN_1
 #define VBAT_ADC_CHANNEL                ADC_CHN_2
 //Disable RSSI
-#define RSSI_ADC_CHANNEL                NONE
 
 // Sensors set
 #define SENSORS_SET (SENSOR_ACC|SENSOR_MAG|SENSOR_BARO)
